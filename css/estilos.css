@@ -9,9 +9,9 @@ header{
     display: flex;
     background-color: rgb(20, 20, 20);
     font-family: 'Times New Roman', Times, serif;  
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    height: 8vh;
+    min-height: 8vh;
   
 }
 
@@ -46,33 +46,33 @@ footer{
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1%;
-
+    
     height: 10vh;
     
     
   
 }
 
-
-p a{
+a{
     text-decoration: none;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
-p a:hover{
+ a:hover{
     transform: scale(1.05);
 	color: #efb810;
 
 }
- h1 a img { 
-     width: 8vw;
-     height: 6vh;
-
-}
-
 
 /* navegacion */
+.portfolio__logo{
+    display: flex;
+}
+.portfolio__logo img{
+    height: 50px;
+}
 
 .portfolio__navegacion{
     padding: 10px;
@@ -85,10 +85,11 @@ p a:hover{
 }
 
 
-.portfolio__navegacion--barra{  
+.portfolio__navegacion--barra {  
     padding: 15px;
     font-size: 20px;
 }
+
 
 .portfolio__navegacion--barra a{
     color:#fff;
@@ -101,6 +102,13 @@ p a:hover{
 .portfolio__navegacion--barra a:hover {
 	transform: scale(1.05);
 	color: #efb810;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        
+    }
+    
 }
 
 /* index */
