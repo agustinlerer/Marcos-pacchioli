@@ -220,7 +220,7 @@ img{
 .portfolio__servicios{
     display:flex ;
     flex-direction: column;
-   min-height: calc(100vh - 10vh - 8vh)
+   min-height: calc(100vh - 10vh - 8vh);
 }
 .portfolio__servicios h3{
     text-align: left;
@@ -327,7 +327,7 @@ img{
   
 }
 .portfolio__contacto--formulario{
-    background-color: #fff;
+    background-color: white;
     width: 90%;
    border-radius: 1rem;
     max-width: 400px;
