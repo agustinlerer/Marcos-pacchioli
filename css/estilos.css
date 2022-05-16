@@ -103,7 +103,13 @@ a{
 	transform: scale(1.05);
 	color: #efb810;
 }
-@media (max-width:700px){
+@media (max-width:576px){
+    header{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width:728px){
     header{
         flex-direction: column;
     }
@@ -184,6 +190,7 @@ a{
      }
 
 }
+/* fin de index  */
 
 /* galeria */
 .portfolio__galeria--trabajos{
@@ -214,108 +221,95 @@ img{
         grid-template-columns: repeat(3,33.3%);
     }
 }
-
+/* fin de galeria */
 
 /* servicios */
 .portfolio__servicios{
-    display:flex ;
-    flex-direction: column;
+  
    min-height: calc(100vh - 10vh - 8vh);
 }
 .portfolio__servicios h3{
-    text-align: left;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: underline;
 }
 
 .portfolio__servicios--fotos{
-    display:flex ;
-    flex-direction: column;
+   text-align: center;
     padding: 1%;
     margin-top: 2%;
     color: #efb810;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: dashed;
-    width: 30vw;
-    
-  
-
 }
 
 .portfolio__servicios--fotos p{
     padding: 1%;
     font-size: 20px;
-    
 }
 
 .portfolio__servicios--edicion{
-    display:flex ;
-    flex-direction: column;
- 
-    padding: 1%;
+    text-align: center;
     margin-top: 4%;
-   
     color: #efb810;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: dashed;
-    width:30vw;
-   
 }
 
 .portfolio__servicios--edicion p{
     padding: 1%;
     font-size: 20px;
-    
 }
 
 .portfolio__servicios--video{
-    display:flex ;
-    flex-direction: column;
+    text-align: center;
     padding: 1%;
     margin-top: 4% ;
     color: #efb810;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-style: dashed;
-    width: 30vw;
-   
 }
 
 .portfolio__servicios--video p{
     padding: 1%;
     font-size: 20px;
-    
 }
+@media(min-width:1200px){
+    .portfolio__servicios--fotos{
+        margin-right: 30%;
+    }
+    .portfolio__servicios--edicion{
+        margin-right: 30%;
+    }
+    .portfolio__servicios--video{
+        margin-right: 30%;
+    }
+}
+/* fin de mis servicios */
+
 /* sobre__mi */
 .portfolio__sobremi{
-    display: flex;
     min-height: calc(100vh - 10vh - 8vh);
-    text-align: left;
-    align-items: center;
     padding: 4%;
-   
+    
 }
 .portfolio__sobremi--texto h3{
     margin-bottom: 2%;
     color: #efb810;
-}
-
-    
+}  
 .portfolio__sobremi--texto{
-    
     color: #fff;
-    padding-right: 4%;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 60%;
-    padding-left: 3%;
-    
 }
 .portfolio__sobremi--img img{
-    height: 50vh;
-    width: 40vw;
-    padding-left: 3%;
+  margin-bottom: 5%;
 }
+@media(max-width:1000px){
+    .portfolio__sobremi{
+        margin-top: 5%;
+    }
+}
+
+/* fin de sobre__mi */
+
 /* contacto */
 .portfolio__contacto{
     display: flex ;
@@ -370,7 +364,7 @@ img{
     cursor: pointer;
     font-weight: 700;
 }
-
+/* fin de contacto */
 
 
 
