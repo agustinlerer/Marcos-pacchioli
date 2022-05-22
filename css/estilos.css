@@ -11,13 +11,17 @@ header{
     font-family: 'Times New Roman', Times, serif;  
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
-  
+    position: fixed;
+    width: 100%;
+   top:0; 
+   left: 0; 
+   height: 5rem;
+   
 }
 
 
 body{
-    
+   padding: 5rem 0px 0;
     background-color: rgb(0, 0, 0);
   
 }
@@ -75,19 +79,30 @@ a{
 }
 
 .portfolio__navegacion{
+    display: flex;
     padding: 0.5rem;
     border-radius: 0.5 rem ;
     
+    
 }
-
+.portfolio__navegacion--hamb{
+    background: none;
+    color: #efb810;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
 .portfolio__navegacion--lista{
     display: flex;
+  
 }
 
 
 .portfolio__navegacion--barra {  
     padding: 1rem;
     font-size: 1.2rem;
+  
 }
 
 
@@ -103,15 +118,30 @@ a{
 	transform: scale(1.05);
 	color: #efb810;
 }
-@media (max-width:576px){
-    header{
-        flex-direction: column;
-    }
-    
-}
+
+
 @media (max-width:728px){
-    header{
+    .portfolio__navegacion--lista{
         flex-direction: column;
+        align-items: center;
+        margin-right: 1.2rem;
+        background-color: rgb(39, 38, 38);
+        position: fixed;
+        left:0;
+        top:60px;
+        width: 100%;
+        padding:20px 0;
+        height: 100%;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .portfolio__navegacion--hamb{
+        display: block;
+        margin-right: 2rem;
+    }
+    .portfolio__navegacion--animacion{
+        left: 0%;
     }
     
 }
