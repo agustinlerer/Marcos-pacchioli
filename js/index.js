@@ -1,6 +1,6 @@
-const portfolio_navegacionhamb = document.querySelector (".portfolio__navegacion--hamb");
-const portfolio_navegacionlista = document.querySelector (".portfolio__navegacion--lista");
+const portfolio_navegacionhamb = document.querySelector (".navegacion__hamb");
+const portfolio_navegacionlista = document.querySelector (".navegacion__lista");
 
 portfolio_navegacionhamb.addEventListener("click", () => {
-    portfolio_navegacionlista.classList.toggle("portfolio__navegacion--animacion");
+    portfolio_navegacionlista.classList.toggle("navegacion__animacion");
 });

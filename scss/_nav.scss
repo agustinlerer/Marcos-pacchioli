@@ -1,0 +1,27 @@
+ /* navegacion */
+ .logo{
+    display: flex;
+    img{
+        height: 3rem;
+    }
+}
+.navegacion{
+        display: flex;
+        padding: 0.5rem;
+        border-radius: 0.5 rem ;
+        &__hamb {
+           background: none;
+           color: $colorprincipal;
+           border: none;
+           font-size: 1.8rem;
+           cursor: pointer;
+           display: none;
+        }
+        &__lista{
+            display: flex;   
+        }
+        &__barra{
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+}

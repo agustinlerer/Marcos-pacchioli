@@ -1,0 +1,47 @@
+ /* etiquetas */
+ header{
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    font-family: 'Times New Roman', Times, serif;  
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0; 
+    left: 0; 
+    height: 5rem;
+    
+}
+ 
+ 
+body{
+    padding: 5rem 0px 0;
+    background-color:$colordefondo;
+   
+}
+ 
+ul{
+     list-style-type: none;
+}
+ 
+
+ 
+h2{
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+
+
+ 
+ a{
+     text-decoration: none;
+     color: #fff;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     &:hover{
+        transform: scale(1.05);
+        color:$colorprincipal ;
+
+     }
+ }

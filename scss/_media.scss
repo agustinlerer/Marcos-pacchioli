@@ -1,0 +1,70 @@
+/* ---- NAV ---- */
+@media  (max-width:728px){
+    .navegacion{
+        &__lista{
+         flex-direction: column;
+         align-items: center;
+         margin-right: 1.2rem;
+         background-color: rgb(39, 38, 38);
+         position: fixed;
+         left:0;
+         top:60px;
+         width: 100%;
+         padding:20px 0;
+         height: 100%;
+         overflow-y: auto;
+         left: 100%;
+         transition: left 0.3s;
+        }
+        &__hamb{
+            display: block;
+            margin-right: 2rem;
+        }
+        &__animacion{
+            left: 0%;
+        }
+    } 
+}
+/* ---- PORTADA ---- */
+@media (max-width:728px){
+    .portada{
+        width: 100%;
+        &__servicios{
+            font-size: 2rem;
+        }
+    }
+ 
+}
+ @media (min-width:1024px){
+     .portada{
+        width: 100%;
+        &__servicios{
+            font-size: 2.2rem;
+        }
+    }
+}
+/* ---- GALERIA ---- */
+
+
+@media(min-width:576px){
+    .galeria__trabajos{
+        grid-template-columns: repeat(2,50%);
+    }
+} 
+@media(min-width:728px){
+    .galeria__trabajos{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+/* ---- SERVICIOS ---- */
+@media(min-width:1200px){
+    .servicios__fotos{
+        margin-right: 30%;
+    }
+    .servicios__edicion{
+        margin-right: 30%;
+    }
+    .servicios__video{
+        margin-right: 30%;
+    }
+}
