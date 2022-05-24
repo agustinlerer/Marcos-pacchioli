@@ -3,6 +3,7 @@
 @import 'nav';
 @import 'etiquetasgenerlas';
 @import 'sasssrcirp';
+@import 'media';
 
 *{
     margin: 0;
@@ -82,9 +83,7 @@
         font-size: 1.2rem;
     }
     &__fotos{
-       @include servicios($pading:1%,$marging:2%);
-       
-       
+       @include servicios($pading:1%,$marging:2%);   
     }
     &__edicion{
        @include servicios($pading:0%,$marging:4%);
@@ -185,4 +184,3 @@
  
  
  
- @import 'media';

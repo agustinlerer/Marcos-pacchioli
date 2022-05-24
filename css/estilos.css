@@ -69,6 +69,59 @@ a {
     transform: scale(1.05);
     color: #efb810; }
 
+/* ---- NAV ---- */
+@media (max-width: 728px) {
+  .navegacion__lista {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.2rem;
+    background-color: #272626;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: 100%;
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s; }
+  .navegacion__hamb {
+    display: block;
+    margin-right: 2rem; }
+  .navegacion__animacion {
+    left: 0%; } }
+
+/* ---- PORTADA ---- */
+@media (max-width: 728px) {
+  .portada {
+    width: 100%; }
+    .portada__servicios {
+      font-size: 2rem; } }
+
+@media (min-width: 1024px) {
+  .portada {
+    width: 100%; }
+    .portada__servicios {
+      font-size: 2.2rem; } }
+
+/* ---- GALERIA ---- */
+@media (min-width: 576px) {
+  .galeria__trabajos {
+    grid-template-columns: repeat(2, 50%); } }
+
+@media (min-width: 728px) {
+  .galeria__trabajos {
+    grid-template-columns: repeat(3, 33.3%); } }
+
+/* ---- SERVICIOS ---- */
+@media (min-width: 1200px) {
+  .servicios__fotos {
+    margin-right: 30%; }
+  .servicios__edicion {
+    margin-right: 30%; }
+  .servicios__video {
+    margin-right: 30%; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -207,55 +260,3 @@ a {
     font-weight: 700; }
 
 /* fin de contacto */
-/* ---- NAV ---- */
-@media (max-width: 728px) {
-  .navegacion__lista {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 1.2rem;
-    background-color: #272626;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-    height: 100%;
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s; }
-  .navegacion__hamb {
-    display: block;
-    margin-right: 2rem; }
-  .navegacion__animacion {
-    left: 0%; } }
-
-/* ---- PORTADA ---- */
-@media (max-width: 728px) {
-  .portada {
-    width: 100%; }
-    .portada__servicios {
-      font-size: 2rem; } }
-
-@media (min-width: 1024px) {
-  .portada {
-    width: 100%; }
-    .portada__servicios {
-      font-size: 2.2rem; } }
-
-/* ---- GALERIA ---- */
-@media (min-width: 576px) {
-  .galeria__trabajos {
-    grid-template-columns: repeat(2, 50%); } }
-
-@media (min-width: 728px) {
-  .galeria__trabajos {
-    grid-template-columns: repeat(3, 33.3%); } }
-
-/* ---- SERVICIOS ---- */
-@media (min-width: 1200px) {
-  .servicios__fotos {
-    margin-right: 30%; }
-  .servicios__edicion {
-    margin-right: 30%; }
-  .servicios__video {
-    margin-right: 30%; } }
