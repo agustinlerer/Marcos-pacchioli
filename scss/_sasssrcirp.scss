@@ -1,0 +1,8 @@
+@mixin servicios ($pading,$marging){ 
+    text-align: center;
+    padding: $pading;
+    margin-top: $marging;
+    color: $colorprincipal;
+    font-family:$fontprincipal;
+    
+}
