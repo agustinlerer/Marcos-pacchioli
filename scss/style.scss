@@ -56,18 +56,72 @@
 .galeria{
     &__trabajos{
       display: grid;
-      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(3, 33.3%));
+      width: 95%;
       margin: auto;
-    }
-   
-    &__fotos{
-        margin: 0.5rem;
-        img{
-             width: 100%;
+      grid-gap: 1rem;
+      padding: 2.5rem 0;
+      overflow: hidden;
+      a{
+        &:hover{
+            img{
+                filter: blur(0.2rem);
+                transform: rotate(5deg) scale(1.3);
+            }
         }
+      }
+      img{
+        width: 100%;
+        vertical-align: top;
+        height: 19rem;
+        object-fit: cover;
+        transition: transform 0.5s; 
+        }
+    }     
+}
+.carrusel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.61);
+    transition: right  0.3s ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    img{
+        width: 35vw;
+        max-height: 100vh;
+    }
+    &:target{
+        transform: scale(1);
     }
 }
+.close{
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    background:$colordefondo;
+    width: 2.5rem;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius:  50%;;
+    
+}
+.siguiente{
+    display: block;
+    height: 1.9rem;
+    width: 1.9rem;
+    line-height: 1.9rem;
+    background: $colordefondo;
+    text-align: center; 
+}
  
+
  /* ------- fin de galeria ------- */
  
  /* ------- servicios ------- */

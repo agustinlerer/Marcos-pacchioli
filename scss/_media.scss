@@ -45,7 +45,6 @@
 }
 /* ---- GALERIA ---- */
 
-
 @media(min-width:576px){
     .galeria__trabajos{
         grid-template-columns: repeat(2,50%);
@@ -56,6 +55,7 @@
         grid-template-columns: repeat(3,33.3%);
     }
 }
+
 /* ---- SERVICIOS ---- */
 @media(min-width:1200px){
     .servicios__fotos{
