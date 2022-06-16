@@ -22,7 +22,7 @@ footer {
 .navegacion {
   display: flex;
   padding: 0.5rem;
-  border-radius: 0.5 rem; }
+  border-radius: 0.5rem; }
   .navegacion__hamb {
     background: none;
     color: #efb810;
@@ -47,7 +47,8 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  height: 5rem; }
+  height: 5rem;
+  z-index: 100; }
 
 body {
   padding: 5rem 0px 0;
@@ -68,59 +69,6 @@ a {
   a:hover {
     transform: scale(1.05);
     color: #efb810; }
-
-/* ---- NAV ---- */
-@media (max-width: 728px) {
-  .navegacion__lista {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 1.2rem;
-    background-color: #272626;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-    height: 100%;
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s; }
-  .navegacion__hamb {
-    display: block;
-    margin-right: 2rem; }
-  .navegacion__animacion {
-    left: 0%; } }
-
-/* ---- PORTADA ---- */
-@media (max-width: 728px) {
-  .portada {
-    width: 100%; }
-    .portada__servicios {
-      font-size: 2rem; } }
-
-@media (min-width: 1024px) {
-  .portada {
-    width: 100%; }
-    .portada__servicios {
-      font-size: 2.2rem; } }
-
-/* ---- GALERIA ---- */
-@media (min-width: 576px) {
-  .galeria__trabajos {
-    grid-template-columns: repeat(2, 50%); } }
-
-@media (min-width: 728px) {
-  .galeria__trabajos {
-    grid-template-columns: repeat(3, 33.3%); } }
-
-/* ---- SERVICIOS ---- */
-@media (min-width: 1200px) {
-  .servicios__fotos {
-    margin-right: 30%; }
-  .servicios__edicion {
-    margin-right: 30%; }
-  .servicios__video {
-    margin-right: 30%; } }
 
 * {
   margin: 0;
@@ -156,23 +104,26 @@ a {
 
 /* fin de index  */
 /* galeria */
-.galeria__trabajos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3, 33.3%));
-  width: 95%;
-  margin: auto;
-  grid-gap: 1rem;
-  padding: 2.5rem 0;
-  overflow: hidden; }
-  .galeria__trabajos a:hover img {
-    filter: blur(0.2rem);
-    transform: rotate(5deg) scale(1.3); }
-  .galeria__trabajos img {
-    width: 100%;
-    vertical-align: top;
-    height: 19rem;
-    object-fit: cover;
-    transition: transform 0.5s; }
+.galeria {
+  min-height: calc(100vh - 10vh - 8vh); }
+  .galeria__trabajos {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    width: 95%;
+    margin: auto;
+    grid-gap: 1rem;
+    padding: 2.5rem 0;
+    overflow: hidden; }
+    .galeria__trabajos a {
+      z-index: 1; }
+      .galeria__trabajos a:hover img {
+        filter: blur(0.2rem);
+        transform: rotate(2deg) scale(1); }
+    .galeria__trabajos img {
+      width: 100%;
+      height: 19rem;
+      object-fit: cover;
+      transition: transform 0.5s; }
 
 .carrusel {
   position: fixed;
@@ -185,7 +136,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0); }
+  transform: scale(0);
+  z-index: 1000; }
   .carrusel img {
     width: 35vw;
     max-height: 100vh; }
@@ -260,6 +212,11 @@ a {
   .sobremi__img img {
     margin-bottom: 5%;
     width: 100%; }
+  .sobremi__img--tomiygian img {
+    width: 80%;
+    height: 100vh;
+    margin-bottom: 5%;
+    margin-left: 5%; }
 
 /* fin de sobre__mi */
 /* contacto */
@@ -308,3 +265,78 @@ a {
     font-weight: 700; }
 
 /* fin de contacto */
+/* ---- NAV ---- */
+@media (max-width: 727px) {
+  .navegacion__lista {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.2rem;
+    background-color: #272626;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: 100%;
+    overflow: auto;
+    left: 100%;
+    transition: left 0.3s; }
+  .navegacion__hamb {
+    display: block;
+    margin-right: 2rem; }
+  .navegacion__animacion {
+    left: 0%; } }
+
+/* ---- PORTADA ---- */
+@media (max-width: 728px) {
+  .portada {
+    width: 100%; }
+    .portada__servicios {
+      font-size: 2rem; } }
+
+@media (min-width: 1024px) {
+  .portada {
+    width: 100%; }
+    .portada__servicios {
+      font-size: 2.2rem; } }
+
+/* ---- GALERIA ---- */
+@media (min-width: 0px) and (max-width: 575px) {
+  .galeria__trabajos {
+    grid-template-columns: repeat(1, 100%); }
+    .galeria__trabajos img {
+      width: 100%;
+      height: 100%; }
+  .galeria a:hover img {
+    filter: blur(0);
+    transform: rotate(0) scale(1); }
+  .carrusel {
+    display: none; } }
+
+@media (min-width: 576px) and (max-width: 727px) {
+  .galeria__trabajos {
+    grid-template-columns: repeat(2, 50%); }
+    .galeria__trabajos img {
+      width: 100%;
+      height: 100%; }
+  .galeria a:hover img {
+    filter: blur(0);
+    transform: rotate(0) scale(1); }
+  .carrusel {
+    display: none; } }
+
+@media (min-width: 728px) and (max-width: 1023px) {
+  .galeria__trabajos {
+    grid-template-columns: repeat(3, 33.3%); }
+  .carrusel img {
+    width: 55vw;
+    max-height: 100vh; } }
+
+/* ---- SERVICIOS ---- */
+@media (min-width: 1200px) {
+  .servicios__fotos {
+    margin-right: 30%; }
+  .servicios__edicion {
+    margin-right: 30%; }
+  .servicios__video {
+    margin-right: 30%; } }

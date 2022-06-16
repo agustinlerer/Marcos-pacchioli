@@ -1,5 +1,5 @@
 /* ---- NAV ---- */
-@media  (max-width:728px){
+@media  (max-width:727px){
     .navegacion{
         &__lista{
          flex-direction: column;
@@ -12,7 +12,7 @@
          width: 100%;
          padding:20px 0;
          height: 100%;
-         overflow-y: auto;
+         overflow: auto;
          left: 100%;
          transition: left 0.3s;
         }
@@ -44,15 +44,68 @@
     }
 }
 /* ---- GALERIA ---- */
+@media (min-width:0px)and(max-width:575px){
+    .galeria{
+        &__trabajos{
+            grid-template-columns: repeat(1,100%);
+            img{
+                width: 100%;
+                height: 100%;
+            }
 
-@media(min-width:576px){
-    .galeria__trabajos{
-        grid-template-columns: repeat(2,50%);
+        }
+        a{
+            &:hover{
+                img{
+                    filter: blur(0);
+                    transform: rotate(0) scale(1);
+                }
+            }
+        }
     }
+    .carrusel{
+        display: none;
+    }
+
+}
+
+@media(min-width:576px)and(max-width:727px){
+    .galeria{
+        &__trabajos{
+            grid-template-columns: repeat(2,50%);
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
+        
+        }
+        a{
+            &:hover{
+                img{
+                    filter: blur(0);
+                    transform: rotate(0) scale(1);
+                }
+            }
+        }
+        
+    }
+    .carrusel{
+        display: none;
+    }
+   
 } 
-@media(min-width:728px){
-    .galeria__trabajos{
-        grid-template-columns: repeat(3,33.3%);
+@media(min-width:728px) and (max-width:1023px){
+    .galeria{
+        &__trabajos{
+            grid-template-columns: repeat(3,33.3%);
+        }
+    }
+    .carrusel{
+        img{
+            width: 55vw;
+            max-height: 100vh;
+        }
     }
 }
 
