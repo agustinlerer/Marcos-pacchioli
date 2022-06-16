@@ -247,15 +247,16 @@ a {
 /* fin de mis servicios */
 /* sobre__mi */
 .sobremi {
-  min-height: calc(100vh - 10vh - 8vh);
-  padding: 4%; }
+  min-height: calc(100vh - 10vh - 8vh); }
   .sobremi__texto {
     color: white;
     font-size: 2rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
-    .sobremi__texto h3 {
+    .sobremi__texto h2 {
       margin-bottom: 2%;
       color: #efb810; }
+  .sobremi__bloque {
+    padding: 4%; }
   .sobremi__img img {
     margin-bottom: 5%;
     width: 100%; }

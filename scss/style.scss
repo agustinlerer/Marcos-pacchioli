@@ -158,15 +158,17 @@
  /* sobre__mi */
 .sobremi{
     min-height: calc(100vh - 10vh - 8vh);
-    padding: 4%;
     &__texto{
         color: $colortitulo;
         font-size: 2rem;
         font-family:$fontprincipal;
-        h3{
+        h2{
             margin-bottom: 2%;
             color: $colorprincipal
         }
+    }
+    &__bloque{
+        padding: 4%;
     }
     &__img{
         img{
