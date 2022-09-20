@@ -1,13 +1,22 @@
  /* navegacion */
  .logo{
     display: flex;
-    img{
-        height: 3rem;
-    }
+    
+    
+
+}
+.imagenlogo{
+    background-repeat:no-repeat;
+    height:335px;
+    width: 731px;
+    margin-left: 3rem;
+    background-position:left;
+    background-size: 70%;
+    background-image: url(../recursos/imagenes/logo-removebg-preview.png);
 }
 .navegacion{
         display: flex;
-        padding: 0.5rem;
+        padding: 2rem;
         border-radius: 0.5rem ;
         
         &__hamb {
@@ -23,6 +32,7 @@
         }
         &__barra{
             padding: 1rem;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            padding-bottom: 0.2rem;
         }
 }

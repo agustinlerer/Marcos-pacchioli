@@ -15,7 +15,7 @@
       <!--fila de logo y titulo + nav -->
       <header class="head">
         <div class="logo">
-            <a  href="../index.html"><img src="../recursos/imagenes/logo-removebg-preview.png" alt="" ></a>
+            <a class="imagenlogo"  href="../index.html"></a>
         </div>
         <nav class="navegacion">
             <button class="navegacion__hamb">
@@ -24,9 +24,7 @@
             <ul class="navegacion__lista">
                 <li class="navegacion__barra"><a href="../index.html">Inicio</a></li>
                 <li class="navegacion__barra"><a href="./galeria.html">Galeria</a></li>
-                <li class="navegacion__barra"><a href="./servicios.html">Servicios</a></li>
-                <li class="navegacion__barra"><a href="./sobremi.html">Nosotros</a></li>
-                <li class="navegacion__barra"><a href="./contacto.html">Contactanos</a></li>
+                <li class="navegacion__barra"><a href="./sobremi.html">Sobre mi</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +58,7 @@
             </div>
             <div class="carrusel" id="imagen3">
                 <a href="#imagen2" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
-                <img src="../recursos/imagenes/foto4.jpg" alt="">
+                <img class= "imagen_horizontal" src="../recursos/imagenes/foto4.jpg" alt="">
                 <a href="#imagen4" class="siguiente"><i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#"class="close">X</a>
             </div>
@@ -70,15 +68,15 @@
                 <a href="#imagen5" class="siguiente"><i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#"class="close">X</a>
             </div>
-            <div class="carrusel" id="imagen5">
+            <div class="carrusel "  id="imagen5">
                 <a href="#imagen4" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
                 <img src="../recursos/imagenes/foto6.jpg" alt="">
                 <a href="#imagen6" class="siguiente"><i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#"class="close">X</a>
             </div>
-            <div class="carrusel" id="imagen6">
+            <div class="carrusel " id="imagen6">
                 <a href="#imagen5" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
-                <img src="../recursos/imagenes/foto7.jpg" alt="">
+                <img class= "imagen_horizontal" src="../recursos/imagenes/foto7.jpg" alt="">
                 <a href="#imagen7" class="siguiente"><i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#"class="close">X</a>
             </div>
@@ -107,16 +105,18 @@
         </section>    
     </main>
     <!-- cierre de galeria -->
-      <!-- fila del footer -->
-      <footer>
-        <div class="redes__sociales">
-            <a href="https://www.instagram.com/godno.prod/"><img src="../recursos/imagenes/instagram.png" alt="" height="15px" width="15px"></a>
-            <p>@godno.prod</p>
+    <footer class="pie" id="footer" > <!------ Inicio del Footer ------>
+        <div class="pie_redes">
+            <h2>Redes Sociales</h2>
+            <p>Aca se encuentra mi instgram  y linkendin para ponerse en contacto</p>
+            <div class="pie_redes__links"> <!-- Links externos -->
+                <a class="botton botton--foto  botton--inicio" href="index.html"></a>   <!-- Logo de Todo3dRamos-->
+                <a class="botton botton--foto  botton--instagram" target="_blank" href="https://www.instagram.com/marcos_pacchioli/"></a> <!-- Logo de Instagram-->
+                <a class="botton botton--foto  botton--youtube" target="_blank" href="https://www.linkedin.com/in/marcos-pacchioli-246596187/"></a> <!-- Logo de Youtube-->
+            </div>      
         </div>
-        <p> <a href="../paginas/contacto.html">Contacto</a></p>
-        <p>Copyright  Lerer Agustin©</p>
-    </footer>
-    <!-- cierre del footer -->
+        
+    </footer> <!------ Cierre del Footer ------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

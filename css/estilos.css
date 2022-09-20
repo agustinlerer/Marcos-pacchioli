@@ -1,27 +1,72 @@
 /* --- font --- */
-footer {
-  display: flex;
+.pie {
+  min-height: 50px;
   background-color: black;
-  flex-direction: column;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1%;
-  height: 10vh; }
-  footer .redes__sociales {
-    display: flex;
-    color: #fff;
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  box-shadow: 0px 2px 6px 5px #ffffffb0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-justify: auto;
+  padding: 2%; }
+
+.pie_redes {
+  padding-left: 7%;
+  text-align: center;
+  padding-right: 8rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.pie_redes__links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.botton {
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 1%; }
+
+.botton--foto {
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  background-position: center;
+  background-size: 70%;
+  margin: 10px;
+  background-color: black;
+  border-radius: 50%; }
+  .botton--foto.botton--foto:hover {
+    transition: all 0.4s;
+    height: 70px;
+    width: 70px; }
+
+.botton--instagram {
+  background-image: url(../recursos/imagenes/instagram.png); }
+
+.botton--inicio {
+  background-image: url(../recursos/imagenes/logo.png); }
+
+.botton--youtube {
+  background-image: url(../recursos/imagenes/linkedin.png); }
 
 /* navegacion */
 .logo {
   display: flex; }
-  .logo img {
-    height: 3rem; }
+
+.imagenlogo {
+  background-repeat: no-repeat;
+  height: 335px;
+  width: 731px;
+  margin-left: 3rem;
+  background-position: left;
+  background-size: 70%;
+  background-image: url(../recursos/imagenes/logo-removebg-preview.png); }
 
 .navegacion {
   display: flex;
-  padding: 0.5rem;
+  padding: 2rem;
   border-radius: 0.5rem; }
   .navegacion__hamb {
     background: none;
@@ -34,7 +79,8 @@ footer {
     display: flex; }
   .navegacion__barra {
     padding: 1rem;
-    font-size: 1.2rem; }
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem; }
 
 /* etiquetas */
 header {
@@ -93,7 +139,7 @@ a {
     height: 80vh;
     padding: 0.5rem; }
   .portada__items {
-    padding: 0.5rem; }
+    padding: 1rem; }
   .portada .boton {
     border-radius: 10px;
     border-color: white;
@@ -138,6 +184,9 @@ a {
   align-items: center;
   transform: scale(0);
   z-index: 1000; }
+  .carrusel .imagen_horizontal {
+    width: 60vw;
+    max-height: 100vh; }
   .carrusel img {
     width: 35vw;
     max-height: 100vh; }
@@ -267,6 +316,15 @@ a {
 /* fin de contacto */
 /* ---- NAV ---- */
 @media (max-width: 727px) {
+  .logo {
+    display: flex; }
+  .imagenlogo {
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    background-position: left;
+    background-size: 70%;
+    background-image: url(../recursos/imagenes/logo.png); }
   .navegacion__lista {
     flex-direction: column;
     align-items: center;
@@ -286,6 +344,17 @@ a {
     margin-right: 2rem; }
   .navegacion__animacion {
     left: 0%; } }
+
+@media (max-width: 1200px) {
+  .logo {
+    display: flex; }
+  .imagenlogo {
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    background-position: left;
+    background-size: 70%;
+    background-image: url(../recursos/imagenes/logo.png); } }
 
 /* ---- PORTADA ---- */
 @media (max-width: 728px) {
@@ -332,11 +401,11 @@ a {
     width: 55vw;
     max-height: 100vh; } }
 
-/* ---- SERVICIOS ---- */
-@media (min-width: 1200px) {
-  .servicios__fotos {
-    margin-right: 30%; }
-  .servicios__edicion {
-    margin-right: 30%; }
-  .servicios__video {
-    margin-right: 30%; } }
+/* ---- FOOTER ---- */
+@media (min-width: 0px) and (max-width: 575px) {
+  .pie_redes {
+    padding-left: 7%;
+    text-align: center;
+    padding-right: 2rem;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; } }
