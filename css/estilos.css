@@ -10,9 +10,7 @@
   padding: 2%; }
 
 .pie_redes {
-  padding-left: 7%;
   text-align: center;
-  padding-right: 8rem;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
@@ -400,12 +398,3 @@ a {
   .carrusel img {
     width: 55vw;
     max-height: 100vh; } }
-
-/* ---- FOOTER ---- */
-@media (min-width: 0px) and (max-width: 575px) {
-  .pie_redes {
-    padding-left: 7%;
-    text-align: center;
-    padding-right: 2rem;
-    color: white;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; } }
